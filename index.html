@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 2nd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- CSS Internal -->
+    <style>
+      #praktek2 {
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .assets {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+
+      .img-wt {
+        display: flex;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        span {
+          font-weight: 800;
+          font-size: 16px;
+        }
+        p {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        img {
+          margin-right: 7.5px;
+        }
+      }
+
+      .heading {
+        font-family: "Poppins", sans-serif;
+        h1 {
+          margin-top: -2.5px;
+          font-size: 60px;
+          font-weight: 600;
+          width: 600px;
+        }
+        h2 {
+          margin-top: -10px;
+          font-weight: 500;
+        }
+        span {
+          font-size: 20px;
+          font-weight: 800;
+        }
+        p {
+          font-weight: 400;
+          font-size: 20px;
+          width: 550px;
+        }
+      }
+
+      .buttons {
+        float: inline-start;
+        margin-top: 15px;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+      }
+
+      .button-ase {
+        /* background-color: #30dd8a; */
+        flex-direction: row;
+        margin-right: 20px;
+        button {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          color: white;
+          border: none;
+          padding: 18px 30px;
+          border-radius: 50px;
+        }
+      }
+
+      .button-ases {
+        /* background-color: #30dd8a; */
+        flex-direction: row;
+        button {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: E9E9E9;
+          color: black;
+          border: none;
+          padding: 18px 30px;
+          border-radius: 50px;
+        }
+      }
+
+      .icon {
+        margin-right: 10px;
+      }
+
+      .sheild {
+        display: flex;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          margin-left: 9.26px;
+        }
+        img {
+          padding-right: 10px;
+          border-right: solid 2px black;
+        }
+      }
+
+      .img-p {
+        margin-top: 5px;
+        display: flex;
+        img {
+          margin-left: 7.5px;
+          margin-right: 7.5px;
+        }
+      }
+
+      .left {
+        font-family: "Poppins", sans-serif;
+        float: inline-start;
+    }
+    
+    .heading-l{
+          h1 {
+            font-size: 16px;
+            font-weight: 600;
+          }
+          p{
+              margin-top: 25px;
+              color: #6F6D6D;
+              font-size: 12px;
+              font-weight: 500;
+          }
+          span{
+              margin-left: 10px;
+              color: white;
+              padding: 10px 15px;
+              background-color: #FD6643;
+              border-radius: 50px;
+              font-size: 12px;
+              font-weight: 500;
+          }
+      }
+
+      .sales {
+        display: flex;
+        font-family: "Poppins", sans-serif;
+        align-items: center;
+      }
+
+      .one {
+        font-family: "Poppins", sans-serif;
+        margin-right: 20px;
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        p {
+          font-weight: 500;
+          font-size: 12px;
+          color: black;
+        }
+      }
+
+      .one {
+        font-family: "Poppins", sans-serif;
+        margin-right: 20px;
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        p {
+          font-weight: 500;
+          font-size: 12px;
+          color: black;
+        }
+      }
+      .twothree {
+        font-family: "Poppins", sans-serif;
+        margin-right: 20px;
+        margin-left: 20px;
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        p {
+          font-weight: 500;
+          font-size: 12px;
+          color: black;
+        }
+      }
+
+
+
+      .vert{
+        border-right: solid 1px black;
+        height: 35px;
+      }
+    </style>
+
+    <!-- HTML -->
+    <section id="praktek2">
+      <div class="assets">
+        <div class="texts">
+          <div class="img-wt">
+            <img src="./image/Ghaniains.png" width="50px" />
+            <p><span>5000+</span> GHANAIANS HAVE BEEN USING THESE ICONS</p>
+          </div>
+          <div class="heading">
+            <h1>Buy, Sell or Design 3D Designs</h1>
+            <h2>REALISTIC ICONS FOR YOUR DESIGNS</h2>
+            <p>
+              Use <span>Max.</span> objects in your designs and projects +
+              freely Withdraw premium objects. <span>Starting at $3.49/m.</span>
+            </p>
+            <div class="buttons">
+              <div class="button-ase">
+                <button class="btn-1">
+                  <div class="icon">
+                    <img src="./image/Arrow-down.png" width="15px" />
+                  </div>
+                  Try for Free
+                </button>
+              </div>
+              <div class="button-ases">
+                <button class="btn-1">
+                  <div class="icon">
+                    <img src="./image/Bag.png" width="15px" />
+                  </div>
+                  Sell Your Designs
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./image/Objects.png" width="900px" />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="right">
+          <div class="sheild">
+            <img src="./image/Shield-Done.png" width="15px" />
+            <p>
+              TRUSTED & USED BY THE BIGGEST DESIGNERS & INFLUENCERS AROUND THE
+              WORLD
+            </p>
+          </div>
+          <div class="img-p">
+            <img src="./image/Ellipse 8.png" width="60px" />
+            <img src="./image/Ellipse 8.png" width="60px" />
+            <img src="./image/Ellipse 8.png" width="60px" />
+            <img src="./image/Ellipse 8.png" width="60px" />
+            <img src="./image/Ellipse 8.png" width="60px" />
+            <img src="./image/Ellipse 8.png" width="60px" />
+          </div>
+        </div>
+        <div class="left">
+          <div class="heading-l">
+            <h1>3D ICONS LIBRARY <span>Selling</span></h1>
+            <p>Here you can see live stats of our sales</p>
+          </div>
+          <div class="sales">
+            <div class="one">
+              <h2>$46,8900,00</h2>
+              <p>01. TOTAL ICONS SALES</p>
+            </div>
+            <div class="vert"></div>
+            <div class="twothree">
+              <h2>$6,7509,00</h2>
+              <p>02. PAID TO DESIGNERS</p>
+            </div>
+            <div class="vert"></div>
+            <div class="twothree">
+              <h2>$4,1890,00</h2>
+              <p>03. AVAILABLE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
